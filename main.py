@@ -1,10 +1,11 @@
-teksts = input("Ievadi skaitļus: ")
-def replaceTwos(teksts):
-  if teksts.count("2")>0:
-    teksts = teksts.replace("2", "divi")
-    print(teksts)
-  else:
-    teksts = "Nekas netika aizvietots"
-    print(teksts)
-  return teksts 
-replaceTwos(teksts) 
+text = input("Ievadi tekstu: ")
+def deleteE(text):
+  if text.count("e")>0:
+    text = text.replace("e"," ")
+    text = text.upper()
+    print(text)
+  else: 
+    text = "TEKSTS NESATUR VAJADZĪGO BURTU"
+    print(text)
+  return text 
+deleteE(text)
