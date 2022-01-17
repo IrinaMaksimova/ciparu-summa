@@ -1,4 +1,10 @@
-teksts = input("Ievadiet skaitli: ")
-def countZeros(teksts):
-  return teksts.count("0")
-print(countZeros(teksts))
+teksts = input("Ievadi skaitļus: ")
+def replaceTwos(teksts):
+  if teksts.count("2")>0:
+    teksts = teksts.replace("2", "divi")
+    print(teksts)
+  else:
+    teksts = "Nekas netika aizvietots"
+    print(teksts)
+  return teksts 
+replaceTwos(teksts) 
